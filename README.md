@@ -12,7 +12,7 @@
   codes. The page layout is centered and response using CSS. 
 ## Deployment
   This page is hosted on GitHub Pages: 
-
+https://akg-create.github.io/TimeofDay/
 ## Known Issues/Assumptions
   The script uses the user's system time. 
   No external JS file is used; all scripts are embedded. 
