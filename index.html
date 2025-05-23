@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+    <title>Dynamic Time-Based Webpage</title>
+    <style>
+      body {
+        transition: background-color 1s ease; 
+        color: white; 
+        font-family: Arial, sans-serif;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2em; 
+      }
+
+      .info {
+        margin-top: 1rem;
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to my dynamic webpage!</h1>
+      <div class="info>
+        <p><strong>Name:</strong> Abbie Grooms</p>
+        <p><strong>Course:</strong> Web Application Programming</p>
+        <p><strong>Major:</strong> Computer Science</p>
+      </div>
+    </div>
+    <script> 
+        function setBackgroundBasedOnTime() {
+          const hour = new Date().getHours();
+          let bgColor;
+
+          if (hour >= 6 && hour < 12) {
+            bgColor = '#FFF8DC';
+          } else if (hour >= 12 && hour < 18) {
+            bgColor = '#ADD8E6';
+          } else if (hour >= 18 && hour < 21) {
+            bgColor = '#FFB6C1';
+          } else {
+            bgColor = '#2F4F4F';
+          }
+
+        document.body.style.backgroundColor = bgColor;
+        }
+        setBackgroundBasedOnTime();
+        </script>
+  </body>
+        </html>
